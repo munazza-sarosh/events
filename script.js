@@ -32,11 +32,15 @@ function space(s) {
         alert("you pressed an space key");
     }
 }
-function key(hii) {
-    let key = hii.key;
-    if (key == "a" || key == "A") {
+function letterkey(hii) {
+    console.log(hii.key);
+    let mykey = hii.key;
+    if (mykey === "a" || mykey === "A") {
         let text = "You pressed the 'A' key!";
         document.getElementById("demo_").innerHTML = text;
+    }
+    else {
+        document.getElementById("demo_").innerHTML = "you pressed the wrong key";
 
     }
 }

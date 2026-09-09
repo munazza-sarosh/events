@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter key</title>
+</head>
+
+<body>
+    <p id="demo_"></p>
+    <input type="text" placeholder="press A" onkeydown="letterkey(event)">
+
+    <script>
+        function letterkey(hii) {
+            console.log(hii.key);
+            let mykey = hii.key;
+            if (mykey === "a" || mykey === "A") {
+                let text = "You pressed the 'A' key!";
+                document.getElementById("demo_").innerHTML = text;
+            }
+            else {
+                document.getElementById("demo_").innerHTML = "hello";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
