@@ -23,6 +23,24 @@ function escape(Hello) {
         alert("you pressed an escape key");
     }
 }
+function space(s) {
+    console.log(s);
+    console.log(s.keyCode);
+    console.log(s.code);
+    let key = s.key;
+    if (key == "Space") {
+        alert("you pressed an space key");
+    }
+}
+function key(hii) {
+    let key = hii.key;
+    if (key == "a" || key == "A") {
+        let text = "You pressed the 'A' key!";
+        document.getElementById("demo_").innerHTML = text;
+
+    }
+}
+
 // on click
 document.getElementById("element").onclick = function () { element() };
 function element() {
