@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="element">Click me</p>
+    <p id="contextmenu">contextmenu</p>
+    <p id="doubleclick">double click</p>
+    <p id="mousedown">mouse down</p>
+    <p id="mouse-enter">mouse-enter</p>
+    <p id="mouse-leave">mouse-leave</p>
+    <p id="mouse-move">mouse-move</p>
+
+
+    <input type="text" placeholder="Press Escape here" onkeydown="escape(event)">
+    <input type="text" placeholder="Click here to focus" onkeydown="demo(event)">
+    <input type="text" placeholder="Press Enter key" onkeyup="demo(event)">
+    <button onclick="myFunction()">Click me</button>
+    <!-- <script>
+        // function myFunction() {
+        //     alert("Hello! I am an alert box!");
+        // }
+
+        function demo(hello) {
+            console.log(hello);
+            console.log(hello.keyCode);
+            console.log(hello.code);
+            let minekey = hello.key;
+            if (minekey == "Enter") {
+                alert("You have pressed Enter key");
+            }
+
+        }
+
+    </script> -->
+    <script src="script.js"></script>
+</body>
+
+
+</html>
