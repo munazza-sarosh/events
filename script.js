@@ -28,7 +28,7 @@ function space(s) {
     console.log(s.keyCode);
     console.log(s.code);
     let key = s.key;
-    if (key == "Space") {
+    if (key == "backspace") {
         alert("you pressed an space key");
     }
 }
